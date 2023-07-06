@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加记录</title>
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <div class="container">
+        <h1>添加记录</h1>
+        <hr>
+        <form method="post" action="/account">
+            <div>
+                <label>事项
+                    <input type="text" name="title" id="title">
+                </label>
+            </div>
+            <div>
+                <label>时间
+                    <input type="date" name="time" id="time">
+                </label>
+            </div>
+            <div>
+                <label>类型
+                    <select name="type" id="type">
+                        <option value="-1">支出</option>
+                        <option value="1">收入</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>金额
+                    <input type="text" name="account" id="account">
+                </label>
+            </div>
+            <div>
+                <label>备注
+                    <textarea name="remarks" id="remarks"></textarea>
+                </label>
+            </div>
+            <div>
+                <button class="addBtn" type="submit">添加</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
